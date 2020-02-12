@@ -13,7 +13,7 @@
   "scripts": {
     "start": "DEBUG=app:* node index.js",
     "build": "rollup -c --environment BUILD:production",
-    "dev": "DEBUG=app:* DEBUG_COLORS=yes nodemon --watch src --watch ../common/src --exec \"rollup -c && npm start\"",
+    "dev": "DEBUG=app:* DEBUG_COLORS=yes nodemon --watch src --exec \"rollup -c && npm start\"",
     "lint": "eslint \"*.js\" \"src/**/*.js\"",
     "format": "prettier-eslint --write \"$(pwd)/*.js\" \"$(pwd)/src/**/*.js\"",
     "reset": "trash node_modules package-lock.json; npm install"
@@ -45,6 +45,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-simple-import-sort": "^5.0.1",
     "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
     "prettier-eslint": "^9.0.1",
     "prettier-eslint-cli": "^5.0.0",
