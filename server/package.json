@@ -1,0 +1,54 @@
+{
+  "name": "t2t-graphql-server",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "",
+  "repository": "takram-design-engineering/t2t-graphql",
+  "bugs": "https://github.com/takram-design-engineering/t2t-graphql/issues",
+  "homepage": "https://github.com/takram-design-engineering/t2t-graphql",
+  "author": {
+    "name": "Shota Matsuda",
+    "email": "shota@takram.com"
+  },
+  "scripts": {
+    "start": "DEBUG=app:* node index.js",
+    "build": "rollup -c --environment BUILD:production",
+    "dev": "DEBUG=app:* DEBUG_COLORS=yes nodemon --watch src --watch ../common/src --exec \"rollup -c && npm start\"",
+    "lint": "eslint \"*.js\" \"src/**/*.js\"",
+    "format": "prettier-eslint --write \"$(pwd)/*.js\" \"$(pwd)/src/**/*.js\"",
+    "reset": "trash node_modules package-lock.json; npm install"
+  },
+  "dependencies": {
+    "apollo-datasource-rest": "^0.7.0",
+    "apollo-server-express": "^2.10.0",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^14.6.0",
+    "graphql-tag": "^2.10.3",
+    "graphql-tools": "^4.0.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-private-methods": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "babel-eslint": "^10.0.3",
+    "builtin-modules": "^3.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^5.0.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier": "^1.19.1",
+    "prettier-eslint": "^9.0.1",
+    "prettier-eslint-cli": "^5.0.0",
+    "rollup": "^1.31.0",
+    "rollup-plugin-babel": "^4.3.3"
+  }
+}

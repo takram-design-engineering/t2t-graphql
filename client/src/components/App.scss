@@ -1,0 +1,19 @@
+// MIT License
+// Copyright (C) 2020-Present Shota Matsuda
+
+.messages {
+  margin: 2rem;
+}
+
+.message + .message {
+  margin-top: 2rem;
+}
+
+.messageText {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.user {
+  font-size: 0.75rem;
+}
