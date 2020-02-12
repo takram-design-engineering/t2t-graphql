@@ -25,11 +25,5 @@ module.exports = {
     'react/prop-types': 0,
     'react/no-unused-prop-types': 0,
     'react/jsx-fragments': 0
-  },
-  overrides: [
-    {
-      files: '*.test.{js,jsx}',
-      env: { jest: true }
-    }
-  ]
+  }
 }
